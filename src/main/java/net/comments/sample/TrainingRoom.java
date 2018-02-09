@@ -2,8 +2,8 @@ package net.comments.sample;
 
 public class TrainingRoom implements Room {
 
-    private final String number;
-    private final int size;
+    // private final String number;
+    // private final int size;
 
     //  public TrainingRoom(String number, int size){
     //      this.number = number;
