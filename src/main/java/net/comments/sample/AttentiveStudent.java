@@ -15,8 +15,8 @@ public class AttentiveStudent implements Student {
         this.name = name;
     }
 
-    public void learn() {
-        System.out.println(this.name + "Is Listening...");
+    public void learn(Subject subject) {
+        System.out.println(this.name + "Is Listening to " + subject.subjectName());
     }
 
     /*

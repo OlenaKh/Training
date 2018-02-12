@@ -1,17 +1,15 @@
 package net.comments.sample;
 
-public class JavaTeacher implements Teacher {
+public class CookingTeacher implements Teacher {
 
     private final String name;
 
-    public JavaTeacher(String name) {
-
+    public CookingTeacher(String name) {
         this.name = name;
     }
 
     public void teach(Subject subject) {
-
-        System.out.println(this.name + " teach how to " + subject.subjectName());
+        System.out.println(this.name + " teach " + subject.subjectName());
     }
 
     public String name() {

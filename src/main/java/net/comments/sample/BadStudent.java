@@ -17,8 +17,8 @@ public class BadStudent implements Student {
     /*
     allows to sleep during a learning process
      */
-    public void learn() {
-        System.out.println(this.name + " is sleeping");
+    public void learn(Subject subject) {
+        System.out.println(this.name + " is sleeping on " + subject.subjectName());
     }
 
     /**

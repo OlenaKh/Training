@@ -5,10 +5,10 @@ public class SubjectCooking implements Subject {
     private final String name;
 
     public SubjectCooking() {
-        this.name = "Cooking";
+        this.name = "bake cake";
     }
 
     public String subjectName() {
-        return this.name;
+        return name;
     }
 }

@@ -5,10 +5,11 @@ public class SubjectJava implements Subject {
     private final String name;
 
     public SubjectJava() {
-        this.name = "Java";
+        this.name = "use GIT";
     }
 
+
     public String subjectName() {
-        return this.name;
+        return name;
     }
 }
