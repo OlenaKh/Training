@@ -17,8 +17,26 @@ public class App {
         Teacher ector = new CookingTeacher("Ector");
         teach(ector, cooking);
 
-        Room trainingroom = new TrainingRoom();
-        meet(alex, trainingroom);
+        Room smallRoom = new TrainingRoom("2305", 6);
+        Room bigRoom = new TrainingRoom("2413");
+        //meet(alex, trainingroom);
+
+        Person group1[] = new Person[8];
+        group1[0] = dima;
+        for (int i = 1; i < group1.length; i++) {
+            group1[i] = new AttentiveStudent("JavaStudent " + i);
+            System.out.println(group1[i].name() + " assigned to group 1");
+        }
+
+        Person group2[] = new Person[20];
+        group2[0] = ector;
+        for (int i = 1; i < group2.length; i++) {
+            group2[i] = new AttentiveStudent("CookStudent " + i);
+            System.out.println(group2[i].name() + " assigned to group 2");
+        }
+
+        meet(group1, smallRoom);
+        meet(group2, bigRoom);
 
     }
 
@@ -32,8 +50,9 @@ public class App {
         someone.teach(subject);
     }
 
-    private static void meet(Person someone, Room room) {
-        System.out.println("There is a training room.");
-        room.accept(someone);
+    private static void meet(Person[] group, Room room) {
+        for (int i = 0; i < group.length; i++) {
+            room.accept(group[i]);
+        }
     }
 }

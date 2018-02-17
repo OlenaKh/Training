@@ -25,4 +25,9 @@ public class AttentiveStudent implements Student {
     public String name() {
         return this.name;
     }
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }

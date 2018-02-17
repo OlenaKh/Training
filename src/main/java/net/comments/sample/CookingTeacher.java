@@ -15,4 +15,8 @@ public class CookingTeacher implements Teacher {
     public String name() {
         return this.name;
     }
+
+    public String toString() {
+        return name;
+    }
 }

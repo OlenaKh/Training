@@ -8,6 +8,9 @@ public class SubjectJava implements Subject {
         this.name = "use GIT";
     }
 
+    public SubjectJava(String n) {
+        this.name = n;
+    }
 
     public String subjectName() {
         return name;
