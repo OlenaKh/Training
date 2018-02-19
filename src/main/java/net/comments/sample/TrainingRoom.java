@@ -17,21 +17,6 @@ public class TrainingRoom implements Room {
         persons = new Person[size];
     }
 
-//    public void accept(Person person) {
-//        int num = 0;
-//        for (Person p : this.person) {
-//            if (num < this.size) {
-//                this.person[num] = person;
-//                System.out.println(this.person[num] + " went into the room");
-//                num++;
-//            } else {
-//                System.out.println("There is no place for the " + this.person[num]);
-//            }
-//
-//        }
-//
-//    }
-
     public void accept(Person person) {
         for (int i = 0; i < this.persons.length; i++) {
             if (this.persons[i] == null) {
