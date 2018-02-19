@@ -2,18 +2,15 @@ package net.comments.sample;
 
 public class TrainingRoom implements Room {
     private final String number;
-    private final int size;
     private final Person persons[];
 
     public TrainingRoom(String number) {
         this.number = number;
-        this.size = 1000;
-        persons = new Person[size];
+        persons = new Person[1000];
     }
 
     public TrainingRoom(String number, int size) {
         this.number = number;
-        this.size = size;
         persons = new Person[size];
     }
 
